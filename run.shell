@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# 清空 build 文件夹
+rm -rf build/*
+
+# 创建 build 文件夹
+mkdir build
+
+# 进入 build 文件夹
+cd build
+
+# 运行 cmake 和 make
+cmake ..
+make
+
+# 返回到项目根目录
+cd ..
+
+# 运行生成的可执行文件
+./build/tiny-ffplay
